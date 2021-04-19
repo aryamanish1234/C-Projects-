@@ -17,12 +17,12 @@
     "gulp-changed": "^4.0.2",
     "gulp-clean-css": "^4.2.0",
     "gulp-concat": "^2.6.1",
+    "gulp-delete-lines": "0.0.7",
     "gulp-file-include": "^2.1.1",
     "gulp-rename": "^1.4.0",
+    "gulp-replace": "^1.0.0",
     "gulp-sass": "^4.0.2",
-    "gulp-uglify-es": "^2.0.0",
-    "gulp-delete-lines": "0.0.7",
-    "gulp-replace": "^1.0.0"
+    "gulp-uglify-es": "^2.0.0"
   },
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.7",
