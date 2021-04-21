@@ -14,7 +14,7 @@
       this.widget().menu('option', 'items', '> :not(.ui-autocomplete-category)');
     },
     _renderItem: function (ul, item) {
-      var category = item.category ? '<span class="hd-doc-search-category">' + item.category + '</span>' : '',
+      var category = item.category ? '<span class="hd-doc-search-category">' + item.category + 'px' + </span>' : '',
         innerText = category + '<span class="hd-doc-search-label">' + item.label + '</span>';
 
       if (item.url) {
@@ -99,3 +99,19 @@
   };
 
 })(jQuery);
+
+const  acc = document.getElementsByClassName('nested');
+let i;
+let len = acc.length;
+for(i=0;i<len; i++)
+{
+  acc[i].addEventListener('click', function(){
+    this.classList.toggle('active');
+    let panel = this.nextElementSibling;
+    if(panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    }else {
+      panel.style.maxHeight = panel.scrollHeight + 'px'
+    }
+  })
+}
