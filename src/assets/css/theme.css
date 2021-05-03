@@ -304,7 +304,7 @@ fieldset {
   border: 0;
 }
 .drag-area{
-  border: 2px dashed white;
+  border: 2px dashed blue;
   height: 500px;
   width: 700px;
   border-radius: 5px;
