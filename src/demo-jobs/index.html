@@ -168,10 +168,11 @@
               </h3>
 
               <span class="d-block font-size-1 text-body mb-1">$125k-$135k yearly</span>
-
-              <span class="badge badge-soft-info mr-2">
-                <span class="legend-indicator bg-info"></span>Remote
-              </span>
+              
+                <div class="pie" data-value="50"></div>
+                <div class="right"> 
+                <button type="button" class="btn btn-soft-secondary">Secondary</button>
+                </div>
             </div>
 
             <div class="card-footer">
@@ -736,6 +737,9 @@
   <!-- bundlejs:theme [@@autopath] -->
   <script src="@@autopath/assets/js/hs.core.js"></script>
   <script src="@@autopath/assets/js/hs.typed.js"></script>
+  <script src="@@autopath/assets/js/jquery-2.2.4.min.js"></script>
+ <script src="@@autopath/assets/js/jquery.appear.min.js"></script>
+ <script src="@@autopath/assets/js/jquery.easypiechart.min.js"></script> 
 
   <!-- JS Plugins Init. -->
   <script>
@@ -766,6 +770,22 @@
         var goTo = new HSGoTo($(this)).init();
       });
     });
+
+
+    // chat 
+    //no JS is required this is just to duplicate the pies
+var i = 0;
+while (i < 101) {
+    duplicatePies(i);
+    i++
+}
+
+function duplicatePies(i) {
+	var el =  document.createElement("div");
+	el.setAttribute('data-value', i);
+  el.className="pie";
+  document.body.appendChild(el);
+}
   </script>
 
   <!-- IE Support -->

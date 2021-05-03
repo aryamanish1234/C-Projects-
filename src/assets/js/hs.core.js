@@ -99,3 +99,20 @@ for(i=0;i<len; i++)
     }
   })
 }
+
+
+
+// Circle part 
+//no JS is required this is just to duplicate the pies
+var i = 0;
+while (i < 101) {
+    duplicatePies(i);
+    i++
+}
+
+function duplicatePies(i) {
+	var el =  document.createElement("div");
+	el.setAttribute('data-value', i);
+  el.className="pie";
+  document.body.appendChild(el);
+}
